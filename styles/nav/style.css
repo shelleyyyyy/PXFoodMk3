@@ -1,0 +1,16 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.nav-item{
+    padding: 1em;
+}
+
+.link{
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+}

@@ -13,7 +13,7 @@ Class register {
 	function newRegister ($name, $username, $email, $phone, $password){
 		
 		
-		$sql = "INSERT INTO userinfo (name, username, description, email, phone, password)
+		$sql = "INSERT INTO user_info (name, username, description, email, phone, password)
 				VALUES ('$name', '$username', '$email', '$phone', '$password')"; 
 		
 			

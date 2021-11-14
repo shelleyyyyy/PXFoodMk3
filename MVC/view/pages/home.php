@@ -1,3 +1,11 @@
+<?php
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,10 +51,13 @@
             /* justify-content: center; */
             margin: 0 auto 0 auto;
         }
+
     </style>
 
 </head>
 <body>
+    
+
     <h1 class="title">PX Food</h1>
 
     <!-- <button class="primary">primary</button>

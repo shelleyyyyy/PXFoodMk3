@@ -1,7 +1,6 @@
 <?php
 
-include "view/htmlComponents/nav.html";
-
+include "view/htmlComponents/nav.php";
 class cntrBook {
 
     public $model, $view;
@@ -10,7 +9,7 @@ class cntrBook {
 	}
 
 	function viewMenu(){
-
+		$this->view = new siteMenue();
 	}
 
     function actions($flag) {		
@@ -18,8 +17,15 @@ class cntrBook {
 		$this->viewMenu();
 		
 		if($flag=="home"){
-		   include "view/pages/home.html";
+		   include "view/pages/home.php";
 		}  
+
+		// include "./MVC/model/register.php";
+		// $this->model = new register();
+		
+		if($flag=="newRegister"){
+		  	$this->model->newRegister ($_REQUEST['name'], $_REQUEST['username'], $_REQUEST['email'], $_REQUEST['phone'], $_REQUEST['password']);		  
+		}
 
 		if($flag=="grill"){
 			include "view/pages/grill.html";

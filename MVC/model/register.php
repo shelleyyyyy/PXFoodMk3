@@ -4,16 +4,15 @@ Class register {
 	
 	public $conn;
 	
-	function __construct(){	
-	
+	function __construct(){
+
 		$this->conn = new mysqli("localhost", "root", "", "pxfood");
-		
 	}
 	
 	function newRegister ($name, $username, $email, $phone, $password){
 		
 		
-		$sql = "INSERT INTO user_info (name, username, description, email, phone, password)
+		$sql = "INSERT INTO user_info (name, username, email, phone, password)
 				VALUES ('$name', '$username', '$email', '$phone', '$password')"; 
 		
 			
@@ -22,7 +21,6 @@ Class register {
 		} else {
 		    echo "Error: record couldn’t be inserted";
 		}
-		$this->conn->close(); // close DB connection		
-		
+		$this->conn->close();		
 	}
 }

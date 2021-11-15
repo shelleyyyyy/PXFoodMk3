@@ -20,9 +20,9 @@ class cntrBook {
 		   include "view/pages/home.php";
 		}  
 
-		// include "./MVC/model/register.php";
-		// $this->model = new register();
-		
+		include "model/register.php";
+		$this->model = new register();
+
 		if($flag=="newRegister"){
 		  	$this->model->newRegister ($_REQUEST['name'], $_REQUEST['username'], $_REQUEST['email'], $_REQUEST['phone'], $_REQUEST['password']);		  
 		}

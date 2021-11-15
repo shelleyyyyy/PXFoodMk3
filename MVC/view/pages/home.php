@@ -2,8 +2,6 @@
 
 
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +22,6 @@
           color: white;
           text-align: center;
           margin: 1em auto 1em auto;
-          /* background-color: white; */
         }
 
         .container{
@@ -34,7 +31,6 @@
         .d-block{
           display: block;
           margin: 0 auto 0 auto;
-          /* border: 5px solid black; */
         }
 
         .card{
@@ -56,12 +52,8 @@
 
 </head>
 <body>
-    
 
     <h1 class="title">PX Food</h1>
-
-    <!-- <button class="primary">primary</button>
-    <button type="button" class="btn btn-primary">Primary</button> -->
 
     <div id="carouselExampleSlidesOnly" class="carouselContainer carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -120,8 +112,6 @@
                 </div>
             </div>
 
-            
-
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="https://www.packaging-gateway.com/wp-content/uploads/sites/2/2021/04/Starbucks.jpg" class="card-img-top" alt="...">
@@ -143,10 +133,6 @@
             </div>    
         </div>
     </div>
-
-    
-    
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

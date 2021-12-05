@@ -9,4 +9,3 @@ if(!isset($_REQUEST['flag'])){
 }else{
     $book->actions($_REQUEST['flag']);
 }
-

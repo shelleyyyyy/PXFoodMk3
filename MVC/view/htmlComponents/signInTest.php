@@ -19,7 +19,7 @@ function TestBlockHTML () {
 
                     .container{
                         /* border: 1px solid hotpink; */
-                        justify-content: right;
+                        /* justify-content: right; */
                         display: grid;
                         grid-template-columns: auto auto;
                         

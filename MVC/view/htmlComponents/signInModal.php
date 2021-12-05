@@ -13,21 +13,24 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                         <div class="modal-body">
-                        <form class="row g-3" action="index.php" method="get">
 
+
+                        <form class="row g-3" action="/pxfoodmk3/MVC/model/signIn.php" method="post">
                             <div class="col-md-6">
-                                <label for="inputPassword4" class="form-label">Username</label>
-                                <input name="username" type="text" class="form-control" id="inputPassword4">
+                                <label for="inputUsername4" class="form-label">Username</label>
+                                <input name="username" type="text" class="form-control" id="inputUsername4">
                             </div>
 
                             <div class="col-md-6">
-                                <label for="inputEmail4" class="form-label">Password</label>
-                                <input  name="password" type="text" class="form-control" id="inputEmail4">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input  name="password" type="text" class="form-control" id="inputPassword4">
                             </div>
 
-                            <input type="hidden"  name="flag" value="newRegister">
+                            <input type="hidden" name="flag" value="newSignIn">
                             <input class="btn btn-primary" type="submit"  name="Add Book">
                         </form>
+
+
                     </div>
                 </div>
             </body>
@@ -37,4 +40,4 @@
 
 } 
 
-?>  
+?>

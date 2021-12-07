@@ -4,12 +4,13 @@ include 'view/htmlComponents/registerModal.php';
 include 'view/htmlComponents/profileMenue.php';
 include 'view/htmlComponents/signInModal.php';
 
-function TestBlockHTML () { 
-	
-	$bool = false;
-	
-	if($bool == false){?>
-        
+function TestBlockHTML ($bool) { 
+
+	if($bool == true){
+        ProfileMenue();
+    }
+
+    else{?>
         <html>
             <head>
                 <style>
@@ -41,14 +42,9 @@ function TestBlockHTML () {
                 </div>
             </body>
         </html>
-
     <?php
-    }else{
-        ProfileMenue();
     }
 } 
 
-?>  
-
-
+?>
 

@@ -3,6 +3,7 @@
 
 include "view/htmlComponents/signInTest.php";
 
+
 class siteMenue{
 
     function __construct(){
@@ -101,7 +102,13 @@ class siteMenue{
             </ul>
             
 			<?php
-				TestBlockHTML();
+
+				$_COOKIE['bool'] = true;
+				// TestBlockHTML($_COOKIE['bool']);
+				TestBlockHTML($_COOKIE['bool']);
+
+				
+
 			?>
 
 

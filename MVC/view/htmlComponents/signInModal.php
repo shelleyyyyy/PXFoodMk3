@@ -15,7 +15,7 @@
                         <div class="modal-body">
 
 
-                        <form class="row g-3" action="/pxfoodmk3/MVC/model/signIn.php" method="post">
+                        <form class="row g-3" action="index.php" method="post">
                             <div class="col-md-6">
                                 <label for="inputUsername4" class="form-label">Username</label>
                                 <input name="username" type="text" class="form-control" id="inputUsername4">

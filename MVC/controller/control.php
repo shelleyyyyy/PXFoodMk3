@@ -27,6 +27,13 @@ class cntrBook {
 		  	$this->model->newRegister ($_REQUEST['name'], $_REQUEST['username'], $_REQUEST['email'], $_REQUEST['phone'], $_REQUEST['password']);		  
 		}
 
+		include "model/signIn.php";
+		$this->model = new signIn();
+
+		if($flag=="newSignIn"){
+			$this->model->newSignIn ($_REQUEST['username'], $_REQUEST['password']);		  
+	  	}
+
 		if($flag=="grill"){
 			include "view/pages/grill.html";
 		}
@@ -44,3 +51,5 @@ class cntrBook {
 		}
 	}
 }
+
+

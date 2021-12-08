@@ -19,27 +19,27 @@ function RegisterModal () {
 
                             <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Name</label>
-                                <input  name="name" type="text" class="form-control" id="inputEmail4">
+                                <input autocomplete="off" name="name" type="text" class="form-control" id="inputEmail4">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="inputPassword4" class="form-label">Username</label>
-                                <input name="username" type="text" class="form-control" id="inputPassword4">
+                                <input autocomplete="off" name="username" type="text" class="form-control" id="inputPassword4">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Email</label>
-                                <input  name="email" type="text" class="form-control" id="inputEmail4">
+                                <input autocomplete="off" name="email" type="text" class="form-control" id="inputEmail4">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="inputPassword4" class="form-label">Phone</label>
-                                <input  name="phone" type="text" class="form-control" id="inputPassword4">
+                                <input autocomplete="off" name="phone" type="text" class="form-control" id="inputPassword4">
                             </div>
 
                             <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Password</label>
-                                <input  name="password" type="text" class="form-control" id="inputEmail4">
+                                <input autocomplete="off" name="password" type="text" class="form-control" id="inputEmail4">
                             </div>
 
                             <input type="hidden" name="flag" value="newRegister">

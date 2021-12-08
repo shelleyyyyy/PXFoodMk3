@@ -25,15 +25,11 @@ class cntrBook {
 		 	viewHome();
 		}  
 
-		
-
 		if($flag=="newRegister"){
 			include "model/register.php";
 			$this->model = new register();
 		  	$this->model->newRegister ($_REQUEST['name'], $_REQUEST['username'], $_REQUEST['email'], $_REQUEST['phone'], $_REQUEST['password']);		  
-		}
-
-		
+		}		
 
 		if($flag=="newSignIn"){
 			include "model/signIn.php";

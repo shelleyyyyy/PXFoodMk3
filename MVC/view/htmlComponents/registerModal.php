@@ -1,5 +1,8 @@
-<?php function RegisterModal () { ?>
+<?php 
 
+function RegisterModal () { 
+    
+?>
     <html>
         <body>
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">Register</button>
@@ -48,9 +51,5 @@
             </div>
         </body>
     </html>
-
 <?php 
-
 } 
-
-?>  

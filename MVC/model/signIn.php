@@ -1,5 +1,7 @@
 <?php
 
+//session_start();
+
 Class signIn {
 	
 	public $conn;
@@ -36,9 +38,13 @@ Class signIn {
 
             // echo $_COOKIE['bool'];
 
-            $_COOKIE['bool'] = true;
+            $_SESSION['sess_bool'] = true;
 
-            echo $_COOKIE['bool'];
+            $_SESSION['sess_username'] = $username;
+
+            // header("location:http://localhost/pxfoodmk3/mvc/index.php?flag=home");
+
+            // echo "$username";
 
         }else{
             echo "incorrect password";

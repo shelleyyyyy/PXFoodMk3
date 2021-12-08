@@ -22,5 +22,8 @@ Class register {
 		    echo "Error: record couldn’t be inserted";
 		}
 		$this->conn->close();		
+
+		include "view/pages/home.php";
+		viewHome();
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+
 
 include "view/htmlComponents/signInTest.php";
 
@@ -104,21 +104,13 @@ class siteMenue{
             
 			<?php
 
-				//$_COOKIE['bool'] = false;
-        //sess_bool
-				// TestBlockHTML($_COOKIE['bool']);
-
-        if(isset($_SESSION['sess_bool']))
-				 TestBlockHTML($_SESSION['sess_bool']);
-         else{
-           TestBlockHTML(false);
-         }
-
-				
-
+        if(isset($_SESSION['sess_bool'])){
+				  TestBlockHTML($_SESSION['sess_bool']);
+        }else{
+          TestBlockHTML(false);
+        }
+			
 			?>
-
-
 
           </div>
         </div>

@@ -1,4 +1,7 @@
-<?php function SignInModal () { ?>
+<?php function SignInModal () { 
+    
+    
+    ?>
 
         <html>
             <body>

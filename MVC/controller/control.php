@@ -2,9 +2,9 @@
 
 include "view/htmlComponents/nav.php";
 
-
-
-
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 class cntrBook {
 
     public $model, $view;
@@ -61,10 +61,18 @@ class cntrBook {
 			viewStarbucks();
 		}
 
-		// if($flag=="user"){
-		// 	include "view/pages/userInfo.php";
-		// 	viewStarbucks();
-		// }
+		if($flag=="user"){
+			include "view/pages/userInfo.php";
+			viewUserInfo();
+		}
+
+		if($flag=="kill"){
+			session_destroy();
+			include "view/pages/home.php";
+		 	viewHome();
+			Header('Location: '.$_SERVER['PHP_SELF']);
+			Exit();
+		}
 	}
 }
 

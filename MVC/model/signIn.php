@@ -1,8 +1,8 @@
 <?php
 
-//session_start();
 
 Class signIn {
+    // session_start();
 	
 	public $conn;
 	
@@ -12,18 +12,23 @@ Class signIn {
 	}
 	
 	function newSignIn ($username, $password){
+        // session_start();
 
         // include 'view/htmlComponents/signIntest.php';
 		
         $username = $_REQUEST['username'];
-		$sql = "SELECT id, password FROM users WHERE username='$username'";
+		$sql = "SELECT id, name, email, phone, password FROM users WHERE username='$username'";
 
         $result = $this->conn->query($sql);
 
         if ($result->num_rows > 0){
             while ($row = $result->fetch_assoc()){
                 $id = $row["id"];
+                $name = $row["name"];
+                $email = $row["email"];
+                $phone = $row["phone"];
                 $pass = $row["password"];
+
 
                 // echo "$id &nbsp;&nbsp; $username &nbsp;&nbsp; $pass  &nbsp;&nbsp; $password";
             }
@@ -38,9 +43,15 @@ Class signIn {
 
             // echo $_COOKIE['bool'];
 
+            
+
             $_SESSION['sess_bool'] = true;
 
             $_SESSION['sess_username'] = $username;
+            $_SESSION['sess_name'] = $name;
+            $_SESSION['sess_email'] = $email;
+            $_SESSION['sess_phone'] = $phone;
+            $_SESSION['sess_pass'] = $password;
 
             // header("location:http://localhost/pxfoodmk3/mvc/index.php?flag=home");
 
@@ -52,5 +63,8 @@ Class signIn {
         }
 
 		$this->conn->close();
+
+        include "view/pages/home.php";
+		viewHome();
 	}
 }

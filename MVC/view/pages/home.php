@@ -52,7 +52,10 @@ function viewHome(){
 </head>
 <body>
 
-    <h1 class="title">PX Food</h1>
+    <h1 class="title">
+        PX Food
+
+    </h1>
 
     <div id="carouselExampleSlidesOnly" class="carouselContainer carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">

@@ -31,40 +31,43 @@ Class signIn {
 
 
                 // echo "$id &nbsp;&nbsp; $username &nbsp;&nbsp; $pass  &nbsp;&nbsp; $password";
+                
+
+                if ($password == $pass){
+                    // echo "correct password:  ";
+                    // echo "$username     $password";
+                    // include 'view/htmlComponents/nav.php';
+        
+                    // echo $_COOKIE['bool'];
+        
+                    
+        
+                    $_SESSION['sess_bool'] = true;
+        
+                    $_SESSION['sess_username'] = $username;
+                    $_SESSION['sess_name'] = $name;
+                    $_SESSION['sess_email'] = $email;
+                    $_SESSION['sess_phone'] = $phone;
+                    $_SESSION['sess_pass'] = $password;
+        
+                    // header("location:http://localhost/pxfoodmk3/mvc/index.php?flag=home");
+        
+                    // echo "$username";
+        
+                }else{
+                    echo '<script>alert("Incorrect Password For this account")</script>';
+                }
             }
         }else{
-            echo "zero results found";
+            echo '<script>alert("This username does not have an account associated")</script>';
+            $pass = "";
         }
 
-        if ($password == $pass){
-            // echo "correct password:  ";
-            // echo "$username     $password";
-            // include 'view/htmlComponents/nav.php';
-
-            // echo $_COOKIE['bool'];
-
-            
-
-            $_SESSION['sess_bool'] = true;
-
-            $_SESSION['sess_username'] = $username;
-            $_SESSION['sess_name'] = $name;
-            $_SESSION['sess_email'] = $email;
-            $_SESSION['sess_phone'] = $phone;
-            $_SESSION['sess_pass'] = $password;
-
-            // header("location:http://localhost/pxfoodmk3/mvc/index.php?flag=home");
-
-            // echo "$username";
-
-        }else{
-            echo "incorrect password";
-            return false;
-        }
+        
 
 		$this->conn->close();
 
         include "view/pages/home.php";
 		viewHome();
-	}
+    }
 }
